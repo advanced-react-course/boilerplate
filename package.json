@@ -1,0 +1,29 @@
+{
+  "name": "boilerplate",
+  "version": "0.1.0",
+  "private": true,
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/advanced-react-course/boilerplate.git"
+  },
+  "keywords": [],
+  "author": "Magno Biét <magno.biet@gmail.com> (https://magnobiet.com/)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/advanced-react-course/boilerplate/issues"
+  },
+  "homepage": "https://github.com/advanced-react-course/boilerplate#readme",
+  "dependencies": {
+    "next": "9.4.4",
+    "react": "16.13.1",
+    "react-dom": "16.13.1"
+  },
+  "devDependencies": {}
+}
