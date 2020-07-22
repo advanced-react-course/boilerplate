@@ -1,14 +1,13 @@
 import * as S from './styles';
-
-const Main = () => (
+const Main = ({
+  title = 'Advanced React Course',
+  description = 'TypeScript, ReactJS, NextJS and Styled Components',
+}) => (
   <S.Wrapper>
     <S.Logo src="/images/logo.svg" alt="" />
+    <S.Title>{title}</S.Title>
 
-    <S.Title>Advanced React Course</S.Title>
-
-    <S.Description>
-      TypeScript, ReactJS, NextJS and Styled Components
-    </S.Description>
+    <S.Description>{description}</S.Description>
     <S.Illustration src="/images/hero-illustration.svg" alt="" />
   </S.Wrapper>
 );
