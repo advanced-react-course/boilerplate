@@ -8,6 +8,10 @@ function App({ Component, pageProps }: AppProps) {
       <Head>
         <title>React Boilerplate</title>
         <meta name="description" content="React Boilerplate" />
+        <meta name="theme-color" content="#06092b" />
+        <link rel="shortcut icon" href="/images/icon-512.png" />
+        <link rel="apple-touch-icon" href="/images/icon-512.png" />
+        <link rel="manifest" href="/manifest.json" />
       </Head>
       <GlobalStyles />
       <Component {...pageProps} />

@@ -213,3 +213,5 @@ $RECYCLE.BIN/
 
 /out/
 /build
+public/sw.js
+public/workbox-*.js
