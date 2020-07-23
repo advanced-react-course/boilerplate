@@ -1,30 +1,46 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Boilerplate
 
-## Getting Started
+[![Made with TypeScript](https://img.shields.io/badge/Made%20with-TypeScript-007acc.svg)](https://www.typescriptlang.org/)
+[![Made with React](https://img.shields.io/badge/Made%20with-React-61DAFB.svg)](https://reactjs.org/)
+[![Made with Next.js](https://img.shields.io/badge/Made%20with-Next.js-111111.svg)](https://nextjs.org/)
+[![Storybook](https://cdn.jsdelivr.net/gh/storybooks/brand@master/badge/badge-storybook.svg)](https://storybook.js.org/)
 
-First, run the development server:
+[![Commitizen friendly](https://img.shields.io/badge/commitizen-friendly-brightgreen.svg)](http://commitizen.github.io/cz-cli/)
+[![MIT Licence](https://img.shields.io/badge/licence-MIT-blue.svg)](https://magno.mit-license.org/)
+
+## TL;DR
+
+### Development
 
 ```bash
 npm run dev
-# or
-yarn dev
+npm run test:watch
+npm run storybook
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### Build
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+```bash
+npm run build:prod
+npm run build-storybook
+npm run start
+```
 
-## Learn More
+## Contributing
 
-To learn more about Next.js, take a look at the following resources:
+1. Fork it!
+2. Create your feature branch
+   - `git checkout -b feature/my-new-feature`
+3. Commit your changes
+   - `git commit -m "feat: add some feature"`
+4. Push to the branch
+   - `git push origin feature/my-new-feature`
+5. Submit a pull request
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Security Vulnerabilities
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+If you discover a security vulnerability within this project, please send an e-mail to Magno Biét via [magno.biet@gmail.com](mailto:magno.biet@gmail.com). All security vulnerabilities will be promptly addressed.
 
-## Deploy on Vercel
+## License
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/import?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+This package is licensed under the [MIT license](https://magno.mit-license.org/2020). Copyright © Magno Biét
