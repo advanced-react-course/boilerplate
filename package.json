@@ -13,7 +13,8 @@
     "test": "jest",
     "test:watch": "jest --watch",
     "storybook": "start-storybook -s ./public -p 6006",
-    "build-storybook": "build-storybook -s ./public"
+    "build-storybook": "build-storybook -s ./public",
+    "generate": "plop --plopfile ./.plop/plopfile.js"
   },
   "repository": {
     "type": "git",
@@ -62,6 +63,7 @@
     "jest": "^26.4.0",
     "jest-styled-components": "^7.0.2",
     "lint-staged": "^10.2.11",
+    "plop": "^2.7.4",
     "prettier": "^2.0.5",
     "ts-loader": "^8.0.2",
     "typescript": "^3.9.7",
