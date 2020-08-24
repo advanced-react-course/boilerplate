@@ -5,6 +5,8 @@
 [![Made with Next.js](https://img.shields.io/badge/Made%20with-Next.js-111111.svg)](https://nextjs.org/)
 [![Storybook](https://cdn.jsdelivr.net/gh/storybooks/brand@master/badge/badge-storybook.svg)](https://storybook.js.org/)
 
+[![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=advanced-react-course_boilerplate&metric=alert_status)](https://sonarcloud.io/dashboard?id=advanced-react-course_boilerplate)
+
 [![Commitizen friendly](https://img.shields.io/badge/commitizen-friendly-brightgreen.svg)](http://commitizen.github.io/cz-cli/)
 [![MIT Licence](https://img.shields.io/badge/licence-MIT-blue.svg)](https://magno.mit-license.org/)
 
