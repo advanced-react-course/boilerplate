@@ -1,10 +1,12 @@
 /* eslint-env es6, node */
 
 module.exports = {
+  core: {
+    builder: 'webpack5',
+  },
+  features: {
+    postcss: false,
+  },
   stories: ['../src/components/**/stories.tsx'],
-  addons: [
-    '@storybook/addon-actions',
-    '@storybook/addon-links',
-    '@storybook/addon-knobs/register',
-  ],
+  addons: ['@storybook/addon-essentials'],
 };
