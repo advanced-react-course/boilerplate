@@ -1,5 +1,17 @@
-import Main from 'components/Main';
+import HomeTemplate, { HomeTemplateProps } from 'templates/Home';
 
-export default function Home() {
-  return <Main />;
+function Index(props: HomeTemplateProps) {
+  return <HomeTemplate {...props} />;
 }
+
+export default Index;
+
+const pageProps: HomeTemplateProps = {
+  title: 'Boilerplate',
+  subtitle:
+    'TypeScript, ReactJS, NextJS, Styled Components, Storybook, Jest, and more...',
+};
+
+export const getStaticProps = async () => ({
+  props: { ...pageProps },
+});

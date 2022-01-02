@@ -27,6 +27,12 @@ const GlobalStyles: GlobalStyleComponent<
     }
   }
 
+  html,
+  body,
+  #__next {
+    height: 100%;
+  }
+
   ${({ theme, removeBackground }) => css`
     html {
       font-size: 62.5%;
@@ -38,7 +44,7 @@ const GlobalStyles: GlobalStyleComponent<
 
       ${!removeBackground &&
       css`
-        background-color: ${theme.colors.lightGray};
+        background-color: ${theme.colors.darkGray};
       `}
     }
   `}
