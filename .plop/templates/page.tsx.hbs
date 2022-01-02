@@ -1,0 +1,15 @@
+import {{pascalCase name}}Template, { {{pascalCase name}}TemplateProps } from 'templates/{{pascalCase name}}';
+
+function Index(props: {{pascalCase name}}TemplateProps) {
+  return <{{pascalCase name}}Template {...props} />;
+}
+
+export default Index;
+
+const pageProps: {{pascalCase name}}TemplateProps = {
+  title: '{{pascalCase name}} template',
+};
+
+export const getStaticProps = async () => ({
+  props: { ...pageProps },
+});

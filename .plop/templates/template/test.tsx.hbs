@@ -4,7 +4,7 @@ import {{pascalCase name}}Template from '.';
 
 describe('<{{pascalCase name}}Template />', () => {
   it('should render the {{pascalCase name}}Template', () => {
-    renderWithTheme(<{{pascalCase name}}Template heading="{{pascalCase name}}" />);
+    renderWithTheme(<{{pascalCase name}}Template title="{{pascalCase name}}" />);
 
     expect(
       screen.getByRole('heading', { name: /{{pascalCase name}}/i }),
