@@ -1,0 +1,23 @@
+import {{pascalCase name}} from 'templates/{{pascalCase name}}';
+
+type {{pascalCase name}}TemplateProps = {
+  heading: string;
+};
+
+function {{pascalCase name}}Template(props: {{pascalCase name}}TemplateProps) {
+  return <{{pascalCase name}} {...props} />;
+}
+
+export default {{pascalCase name}}Template;
+
+export const getStaticProps = async () => ({
+  props: {
+    heading: '{{pascalCase name}}',
+  },
+});
+
+/* export const getServeSideProps = async () => ({
+  props: {
+    heading: '{{pascalCase name}}',
+  },
+}); */
