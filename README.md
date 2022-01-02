@@ -8,7 +8,9 @@
 [![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=advanced-react-course_boilerplate&metric=alert_status)](https://sonarcloud.io/dashboard?id=advanced-react-course_boilerplate)
 
 [![Commitizen friendly](https://img.shields.io/badge/commitizen-friendly-brightgreen.svg)](http://commitizen.github.io/cz-cli/)
-[![MIT Licence](https://img.shields.io/badge/licence-MIT-blue.svg)](https://magno.mit-license.org/)
+[![MIT Licence](https://img.shields.io/badge/licence-MIT-blue.svg)](https://magno.mit-license.org/2020)
+
+![Screen Shot](screen-shot.png)
 
 ## TL;DR
 
@@ -19,14 +21,14 @@
 ```bash
 npm run dev
 npm run test:watch
-npm run storybook
+npm run storybook:start
 ```
 
 ### Build
 
 ```bash
 npm run build:prod
-npm run build-storybook
+npm run storybook:build
 npm run start
 ```
 
