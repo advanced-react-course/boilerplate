@@ -17,6 +17,7 @@ module.exports = {
     'plugin:@typescript-eslint/recommended',
     'plugin:prettier/recommended',
     'plugin:storybook/recommended',
+    'plugin:sonarjs/recommended',
   ],
   parser: '@typescript-eslint/parser',
   parserOptions: {
@@ -26,7 +27,7 @@ module.exports = {
     ecmaVersion: 11,
     sourceType: 'module',
   },
-  plugins: ['react', 'react-hooks', '@typescript-eslint'],
+  plugins: ['react', 'react-hooks', '@typescript-eslint', 'sonarjs'],
   rules: {
     'react/prop-types': 'off',
     'react/react-in-jsx-scope': 'off',
