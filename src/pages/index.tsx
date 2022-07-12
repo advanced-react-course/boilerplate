@@ -1,17 +1,17 @@
-import HomeTemplate, { HomeTemplateProps } from 'templates/Home';
+import HomeTemplate, { HomeTemplateProperties } from 'templates/Home';
 
-function Index(props: HomeTemplateProps) {
-  return <HomeTemplate {...props} />;
+function Index(properties: HomeTemplateProperties) {
+  return <HomeTemplate {...properties} />;
 }
 
 export default Index;
 
-const pageProps: HomeTemplateProps = {
+const pageProperties: HomeTemplateProperties = {
   title: 'Boilerplate',
   subtitle:
     'TypeScript, ReactJS, NextJS, Styled Components, Storybook, Jest, and more...',
 };
 
 export const getStaticProps = async () => ({
-  props: { ...pageProps },
+  props: { ...pageProperties },
 });

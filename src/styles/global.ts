@@ -5,12 +5,12 @@ import {
   GlobalStyleComponent,
 } from 'styled-components';
 
-type GlobalStyleProps = {
+type GlobalStyleProperties = {
   removeBackground?: boolean;
 };
 
 const GlobalStyles: GlobalStyleComponent<
-  GlobalStyleProps,
+  GlobalStyleProperties,
   DefaultTheme
 > = createGlobalStyle`
 

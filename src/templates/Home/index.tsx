@@ -1,12 +1,15 @@
 import Logo from 'components/Logo';
 import * as S from './styles';
 
-export type HomeTemplateProps = {
+export type HomeTemplateProperties = {
   title: string;
   subtitle: string;
 };
 
-export default function HomeTemplate({ title, subtitle }: HomeTemplateProps) {
+export default function HomeTemplate({
+  title,
+  subtitle,
+}: HomeTemplateProperties) {
   return (
     <S.Wrapper>
       <Logo />
