@@ -18,6 +18,7 @@ module.exports = {
     'plugin:prettier/recommended',
     'plugin:storybook/recommended',
     'plugin:sonarjs/recommended',
+    'plugin:unicorn/recommended',
   ],
   parser: '@typescript-eslint/parser',
   parserOptions: {
@@ -27,7 +28,7 @@ module.exports = {
     ecmaVersion: 11,
     sourceType: 'module',
   },
-  plugins: ['react', 'react-hooks', '@typescript-eslint', 'sonarjs'],
+  plugins: ['react', 'react-hooks', '@typescript-eslint', 'sonarjs', 'unicorn'],
   rules: {
     'react/prop-types': 'off',
     'react/react-in-jsx-scope': 'off',
