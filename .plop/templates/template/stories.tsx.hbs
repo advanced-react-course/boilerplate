@@ -1,0 +1,16 @@
+import { Meta, StoryObj } from '@storybook/react';
+import { {{pascalCase name}}PageTemplate, {{pascalCase name}}PageTemplateProperties } from '.';
+
+export default {
+  title: 'Templates / {{titleCase name}} Page Template',
+  component: {{pascalCase name}}PageTemplate,
+} as Meta<{{pascalCase name}}PageTemplateProperties>;
+
+export const Default: StoryObj<{{pascalCase name}}PageTemplateProperties> = {
+  parameters: {
+    jest: ['{{pascalCase name}}PageTemplate/test.tsx'],
+  },
+  args: {
+    title: '{{titleCase name}}',
+  },
+};

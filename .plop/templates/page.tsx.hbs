@@ -1,15 +1,27 @@
-import {{pascalCase name}}Template, { {{pascalCase name}}TemplateProps } from 'templates/{{pascalCase name}}';
+import { GetStaticProps, NextPage } from 'next';
+import Head from 'next/head';
+import { {{pascalCase name}}PageTemplate, {{pascalCase name}}PageTemplateProperties } from '~templates';
 
-function Index(props: {{pascalCase name}}TemplateProps) {
-  return <{{pascalCase name}}Template {...props} />;
-}
+const {{pascalCase name}}: NextPage<{{pascalCase name}}PageTemplateProperties> = ({ ...properties }) => {
+  return (
+    <>
+      <Head>
+        <title>{properties.title}</title>
+      </Head>
 
-export default Index;
-
-const pageProps: {{pascalCase name}}TemplateProps = {
-  title: '{{pascalCase name}} template',
+      <{{pascalCase name}}PageTemplate {...properties} />
+    </>
+  );
 };
 
-export const getStaticProps = async () => ({
-  props: { ...pageProps },
-});
+export const getStaticProps: GetStaticProps = async () => {
+  const pageProperties: {{pascalCase name}}PageTemplateProperties = {
+    title: '{{titleCase name}}',
+  };
+
+  return {
+    props: { ...pageProperties },
+  };
+};
+
+export default {{pascalCase name}};

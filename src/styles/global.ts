@@ -1,18 +1,6 @@
-import {
-  createGlobalStyle,
-  css,
-  DefaultTheme,
-  GlobalStyleComponent,
-} from 'styled-components';
+import { createGlobalStyle, css } from 'styled-components';
 
-type GlobalStyleProperties = {
-  removeBackground?: boolean;
-};
-
-const GlobalStyles: GlobalStyleComponent<
-  GlobalStyleProperties,
-  DefaultTheme
-> = createGlobalStyle`
+const GlobalStyles = createGlobalStyle`
 
   * {
     margin: 0;
@@ -33,7 +21,7 @@ const GlobalStyles: GlobalStyleComponent<
     height: 100%;
   }
 
-  ${({ theme, removeBackground }) => css`
+  ${({ theme }) => css`
     html {
       font-size: 62.5%;
     }
@@ -41,11 +29,6 @@ const GlobalStyles: GlobalStyleComponent<
     body {
       font-family: ${theme.font.family};
       font-size: ${theme.font.sizes.medium};
-
-      ${!removeBackground &&
-      css`
-        background-color: ${theme.colors.darkGray};
-      `}
     }
   `}
 `;

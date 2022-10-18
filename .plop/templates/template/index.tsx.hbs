@@ -1,13 +1,14 @@
+import { FC } from 'react';
 import * as S from './styles';
 
-export type {{pascalCase name}}TemplateProps = {
+export type {{pascalCase name}}PageTemplateProperties = {
   title: string;
 };
 
-export default function {{pascalCase name}}Template({ title }: {{pascalCase name}}TemplateProps) {
+export const {{pascalCase name}}PageTemplate: FC<{{pascalCase name}}PageTemplateProperties> = ({ title }) => {
   return (
-    <S.Wrapper>
-      <h1>{title}</h1>
+    <S.Wrapper data-testid="{{dashCase name}}-page-template">
+      <p data-testid="title">{title}</p>
     </S.Wrapper>
   );
-}
+};

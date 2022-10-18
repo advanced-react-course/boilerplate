@@ -1,11 +1,11 @@
 {
   "compilerOptions": {
     "baseUrl": "src",
-    "target": "es5",
+    "target": "ESNext",
     "lib": [
-      "dom",
-      "dom.iterable",
-      "esnext"
+      "DOM",
+      "DOM.Iterable",
+      "ESNext"
     ],
     "allowJs": true,
     "skipLibCheck": true,
@@ -13,12 +13,56 @@
     "forceConsistentCasingInFileNames": true,
     "noEmit": true,
     "esModuleInterop": true,
-    "module": "esnext",
-    "moduleResolution": "node",
+    "module": "ESNext",
+    "moduleResolution": "Node",
     "resolveJsonModule": true,
     "isolatedModules": true,
     "jsx": "preserve",
-    "incremental": true
+    "incremental": true,
+    "paths": {
+      "~components": [
+        "./components/shared"
+      ],
+      "~components/*": [
+        "./components/shared/*"
+      ],
+      "~templates": [
+        "./components/templates"
+      ],
+      "~templates/*": [
+        "./components/templates/*"
+      ],
+      "~layouts": [
+        "./components/layouts"
+      ],
+      "~layouts/*": [
+        "./components/layouts/*"
+      ],
+      "~pages": [
+        "./pages"
+      ],
+      "~pages/*": [
+        "./pages/*"
+      ],
+      "~styles": [
+        "./styles"
+      ],
+      "~styles/*": [
+        "./styles/*"
+      ],
+      "~types": [
+        "./types"
+      ],
+      "~types/*": [
+        "./types/*"
+      ],
+      "~utils": [
+        "./utils"
+      ],
+      "~utils/*": [
+        "./utils/*"
+      ]
+    }
   },
   "exclude": [
     "node_modules"
@@ -26,6 +70,6 @@
   "include": [
     "next-env.d.ts",
     "**/*.ts",
-    "**/*.tsx"
+    "**/*.tsx",
   ]
 }

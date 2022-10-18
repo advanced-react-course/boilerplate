@@ -1,9 +1,12 @@
+import { FC } from 'react';
 import * as S from './styles';
 
-const {{pascalCase name}} = () => (
-  <S.Wrapper>
-    <h1>{{pascalCase name}}</h1>
+export type {{pascalCase name}}Properties = {
+  title: string;
+};
+
+export const {{pascalCase name}}: FC<{{pascalCase name}}Properties> = ({ title }) => (
+  <S.Wrapper data-testid="{{dashCase name}}-component">
+    <h1>{title}</h1>
   </S.Wrapper>
 );
-
-export default {{pascalCase name}};

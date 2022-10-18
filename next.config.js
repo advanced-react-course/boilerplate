@@ -1,13 +1,25 @@
+/* eslint-disable @typescript-eslint/no-var-requires */
 /* eslint-env es6, node */
-
-// eslint-disable-next-line @typescript-eslint/no-var-requires
-const withPWA = require('next-pwa');
 
 const isProduction = process.env.NODE_ENV === 'production';
 
-module.exports = withPWA({
-  pwa: {
-    dest: 'public',
-    disable: !isProduction,
+/** @type {import('next').NextConfig} */
+const config = {
+  output: 'standalone',
+  experimental: {
+    forceSwcTransforms: true,
   },
+};
+
+const withProgressiveWebApp = require('next-pwa')({
+  dest: 'public',
+  disable: !isProduction,
 });
+
+const plugins = [withProgressiveWebApp];
+
+module.exports = () => {
+  return plugins.reduce((config, plugin) => plugin(config), {
+    ...config,
+  });
+};

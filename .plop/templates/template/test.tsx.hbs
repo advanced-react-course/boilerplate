@@ -1,13 +1,15 @@
 import { screen } from '@testing-library/react';
-import { renderWithTheme } from 'utils/tests/helpers';
-import {{pascalCase name}}Template from '.';
+import { renderWithTheme } from '~utils/tests/helpers';
+import { {{pascalCase name}}PageTemplate } from '.';
 
-describe('<{{pascalCase name}}Template />', () => {
-  it('should render the {{pascalCase name}}Template', () => {
-    renderWithTheme(<{{pascalCase name}}Template title="{{pascalCase name}}" />);
+describe('<{{pascalCase name}}PageTemplate />', () => {
+  it('should render {{pascalCase name}}PageTemplate component', () => {
+    renderWithTheme(<{{pascalCase name}}PageTemplate title="{{titleCase name}}" />);
 
-    expect(
-      screen.getByRole('heading', { name: /{{pascalCase name}}/i }),
-    ).toBeInTheDocument();
+    expect(screen.getByTestId('{{dashCase name}}-page-template')).toBeInTheDocument();
+
+    expect(screen.getByTestId('title')).toBeInTheDocument();
+
+    expect(screen.getByTestId('title')).toHaveTextContent('{{titleCase name}}');
   });
 });

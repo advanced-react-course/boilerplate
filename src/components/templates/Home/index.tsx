@@ -1,17 +1,18 @@
-import Logo from 'components/Logo';
+import { FC } from 'react';
+import { Logo } from '~components';
 import * as S from './styles';
 
-export type HomeTemplateProperties = {
+export type HomePageTemplateProperties = {
   title: string;
   subtitle: string;
 };
 
-export default function HomeTemplate({
+export const HomePageTemplate: FC<HomePageTemplateProperties> = ({
   title,
   subtitle,
-}: HomeTemplateProperties) {
+}) => {
   return (
-    <S.Wrapper>
+    <S.Wrapper data-testid="home-page-template">
       <Logo />
 
       <S.Title data-testid="title">{title}</S.Title>
@@ -19,4 +20,4 @@ export default function HomeTemplate({
       <S.Subtitle data-testid="subtitle">{subtitle}</S.Subtitle>
     </S.Wrapper>
   );
-}
+};
